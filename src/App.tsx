@@ -1,6 +1,7 @@
 import './App.css';
 import Left from '@/compoments/shangjia';
 import Right from '@/compoments/customer';
+import UseStoreDemo from '@/compoments/useStoreDemo';
 import { PriceStore } from '@/store/price';
 function App() {
   const { count, getTotal, price } = PriceStore();
@@ -23,6 +24,7 @@ function App() {
         <div className="wraps">
           <Left />
           <Right />
+          <UseStoreDemo></UseStoreDemo>
         </div>
       </div>
     </>

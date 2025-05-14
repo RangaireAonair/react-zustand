@@ -6,7 +6,7 @@ export default function Left() {
   const { addCount, addPrice, getFetchData } = PriceStore();
 
   useEffect(() => {
-    getFetchData().then((res) => console.log(res));
+    getFetchData();
   });
   return (
     <div className="left">

@@ -2,6 +2,7 @@ import './App.css';
 import Left from '@/compoments/shangjia';
 import Right from '@/compoments/customer';
 import UseStoreDemo from '@/compoments/useStoreDemo';
+import UseSubscribe from '@/compoments/useSubscribe';
 import { PriceStore } from '@/store/price';
 function App() {
   const { count, getTotal, price } = PriceStore();
@@ -25,6 +26,7 @@ function App() {
           <Left />
           <Right />
           <UseStoreDemo></UseStoreDemo>
+          <UseSubscribe></UseSubscribe>
         </div>
       </div>
     </>
